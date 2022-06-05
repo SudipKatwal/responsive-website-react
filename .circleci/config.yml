@@ -9,9 +9,7 @@ jobs:
       - image: circleci/openjdk:8-jdk
     steps:
       - checkout
-      - run:
-          name: Deploy
-          command: |
+      - run: echo "this is the test job"
             
 workflows:
   version: 2
