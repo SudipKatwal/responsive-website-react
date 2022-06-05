@@ -12,12 +12,7 @@ jobs:
       - run:
           name: Deploy
           command: |
-            ssh -o StrictHostKeyChecking=no ubuntu@3.94.205.30 \
-            "echo Start deploy && \
-            cd ~/react-ci-cd && \
-            git pull origin master && \
-            sudo docker compose up --build -d && \
-            echo Deploy end"
+            npm install
 workflows:
   version: 2
   deploy_ec2:
